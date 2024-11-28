@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<head>
+<title> strona </title>
+    <script>
+        function WinOpen_potwierdzenie() {
+            window.open("potwierdzenie.html", "toolbar=no,directories=no,menubar=no,height=380,width=160,top=200,left=200");
+        }
+
+        function show_alert() {
+            alert("ALERT!");
+        }
+
+        function show_prompt() {
+            var name = prompt("Napisz imię", "Imię Nazwisko");
+            if (name != null && name != "") {
+                document.write("Witaj " + name + "! Jak się czujesz?");
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <form>
+        <input type="button" name="Confirm" value="potwierdzenie.html" onclick="WinOpen_potwierdzenie()">
+    </form>
+	
+	
+	
+    <input type="button" onclick="show_alert()" value="UWAŻAJ!!!">
+    <input type="button" onclick="show_prompt()" value="napisz swoje imię">
+</body>
+</html>
